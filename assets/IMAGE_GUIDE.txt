@@ -7,9 +7,13 @@ Export images as WebP or PNG at the recommended dimensions, then place them at t
 Path: assets/portfolio/eastleigh/hero-desktop.png
 Recommended: 1600 × 1000 px. A strong, clean desktop view of the Eastleigh Properties homepage.
 
-02 — Hero phone mockup / Beirut Delivery project card
+02 — Hero phone mockup
 Path: assets/portfolio/beirut-delivery/menu-mobile.png
 Recommended: 750 × 1334 px. Beirut Delivery menu shown on a mobile screen.
+
+02B — Beirut Delivery project card
+Path: assets/portfolio/beirut-delivery/project-cover.png
+Recommended: 1400 × 788 px. A dedicated wide view of the Beirut Delivery ordering experience. This image is separate from the hero phone mockup.
 
 03 — Eastleigh Properties project card
 Path: assets/portfolio/eastleigh/project-cover.png
@@ -30,21 +34,5 @@ Recommended: 1400 × 788 px. Product storefront or collection page.
 07 — Trading Dashboard project card
 Path: assets/portfolio/trading/dashboard.png
 Recommended: 1400 × 788 px. Analytics screen with chart and key metrics.
-
-08 — Eastleigh Properties case study
-Path: assets/portfolio/eastleigh/listing-flow.png
-Recommended: 1000 × 1000 px. Property listing/search flow.
-
-09 — Beirut Delivery case study
-Path: assets/portfolio/beirut-delivery/order-flow.png
-Recommended: 1000 × 1000 px. Ordering and WhatsApp checkout flow.
-
-10 — Beirut Jiko case study
-Path: assets/portfolio/beirut-jiko/analytics.png
-Recommended: 1000 × 1000 px. Reporting or analytics detail.
-
-11 — Social Media Growth case study
-Path: assets/portfolio/social-growth/campaign-results.png
-Recommended: 1000 × 1000 px. Campaign reach and engagement results.
 
 Keep important content away from the outer 8% of each image so responsive cropping never hides it. Do not rename the files unless you also update data/projects.js and script.js.

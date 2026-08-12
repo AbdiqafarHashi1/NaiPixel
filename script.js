@@ -41,12 +41,12 @@ app.innerHTML = `
 
 <section id="portfolio" class="section-dark"><div class="container">
   ${sectionHeading('Selected work','Digital systems built for <span>real business.</span>','From customer-facing experiences to the dashboards behind them.')}
-  <div class="project-grid">${data.projects.map(p => `<article class="project reveal">${imageSlot(p.image,p.name,p.slot)}<div class="body"><p class="cat">${p.category}</p><h3>${p.name}</h3><p>${p.description}</p><div class="row"><a class="btn btn-gold" href="${p.live}" target="_blank" rel="noreferrer">View project</a><a class="btn btn-ghost" href="${data.links.whatsapp}" target="_blank" rel="noreferrer">Ask about it</a></div></div></article>`).join('')}</div>
+  <div class="project-grid">${data.projects.map(p => `<article class="project reveal">${imageSlot(p.image,p.name,p.slot)}<div class="body"><p class="cat">${p.category}</p><h3>${p.name}</h3><p>${p.description}</p><div class="row"><a class="btn btn-gold" href="${data.links[p.link]}" target="_blank" rel="noreferrer">View project</a><a class="btn btn-ghost" href="${data.links.whatsapp}" target="_blank" rel="noreferrer">Ask about it</a></div></div></article>`).join('')}</div>
 </div></section>
 
 <section class="section-light"><div class="container">
   ${sectionHeading('Case studies','Problems solved. <span>Results delivered.</span>','A closer look at how the right system makes everyday business easier.')}
-  <div class="case-list">${data.caseStudies.map(c => `<article class="reveal">${imageSlot(c.image,c.title,c.slot)}<div><p class="cat">Case study</p><h3>${c.title}</h3><p><strong>Challenge:</strong> ${c.challenge}</p><p><strong>Solution:</strong> ${c.solution}</p><p><strong>Result:</strong> ${c.result}</p><a href="${data.links.whatsapp}" target="_blank" rel="noreferrer">Discuss a similar project →</a></div></article>`).join('')}</div>
+  <div class="case-list">${data.caseStudies.map((c, i) => `<article class="reveal"><div class="case-card-heading"><p class="cat">Case study</p><span aria-hidden="true">${String(i + 1).padStart(2, '0')}</span></div><h3>${c.title}</h3><div class="case-details"><p><strong>Challenge</strong>${c.challenge}</p><p><strong>Solution</strong>${c.solution}</p><p><strong>Result</strong>${c.result}</p></div><a href="${data.links.whatsapp}" target="_blank" rel="noreferrer">Discuss a similar project →</a></article>`).join('')}</div>
 </div></section>
 
 <section id="packages" class="section-dark"><div class="container">
