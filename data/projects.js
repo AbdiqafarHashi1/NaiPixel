@@ -3,6 +3,8 @@ window.NAIROBI_PIXEL_DATA = {
     eastleigh: "https://eastleighproperties.netlify.app/",
     beirutDelivery: "https://beirut.delivery",
     beirutJiko: "https://beirutjiko.com",
+    gadgetHub: "https://gadgethubke.netlify.app/",
+    hashiBot: "https://hashibot.app/",
     whatsapp: "https://wa.me/254700370377"
   },
   nav: ["Home", "Portfolio", "Services", "Packages", "Process", "About", "Contact"],
@@ -17,18 +19,18 @@ window.NAIROBI_PIXEL_DATA = {
     ["Automation & CRM", "Automations, follow-ups, lead management & smart workflows.", "◌"]
   ],
   projects: [
-    { name: "Eastleigh Properties", category: "Real Estate Platform", description: "Property marketplace with search, filters, listings, and lead generation system.", image: "assets/portfolio/eastleigh/project-cover.png", slot: "03", live: "https://eastleighproperties.netlify.app/" },
-    { name: "Beirut Delivery", category: "Ordering System", description: "Restaurant ordering system with WhatsApp checkout, delivery and menu flow.", image: "assets/portfolio/beirut-delivery/menu-mobile.png", slot: "02", live: "https://beirut.delivery" },
-    { name: "Beirut Jiko", category: "Owner Dashboard", description: "Operations dashboard for sales, expenses, inventory, food cost and business analytics.", image: "assets/portfolio/beirut-jiko/dashboard-home.png", slot: "04", live: "https://beirutjiko.com" },
-    { name: "Social Media Growth", category: "Content & Branding", description: "Content creation, branding and social media growth systems.", image: "assets/portfolio/social-growth/instagram-grid.png", slot: "05", live: "https://wa.me/254700370377" },
-    { name: "Ecommerce Concept", category: "Storefront System", description: "Modern ecommerce store with product management and WhatsApp orders.", image: "assets/portfolio/ecommerce/storefront.png", slot: "06", live: "https://wa.me/254700370377" },
-    { name: "Trading Dashboard", category: "Analytics System", description: "Trading signals, analytics, risk management and performance dashboard.", image: "assets/portfolio/trading/dashboard.png", slot: "07", live: "https://wa.me/254700370377" }
+    { name: "Eastleigh Properties", category: "Real Estate Platform", description: "Property marketplace with search, filters, listings, and lead generation system.", image: "assets/portfolio/eastleigh/project-cover.png", slot: "03", link: "eastleigh" },
+    { name: "Beirut Delivery", category: "Ordering System", description: "Restaurant ordering system with WhatsApp checkout, delivery and menu flow.", image: "assets/portfolio/beirut-delivery/project-cover.png", slot: "02B", link: "beirutDelivery" },
+    { name: "Beirut Jiko", category: "Owner Dashboard", description: "Operations dashboard for sales, expenses, inventory, food cost and business analytics.", image: "assets/portfolio/beirut-jiko/dashboard-home.png", slot: "04", link: "beirutJiko" },
+    { name: "Social Media Growth", category: "Content & Branding", description: "Content creation, branding and social media growth systems.", image: "assets/portfolio/social-growth/instagram-grid.png", slot: "05", link: "whatsapp" },
+    { name: "GadgetHub Kenya", category: "Ecommerce Store", description: "Modern electronics storefront with product discovery, shopping cart and a streamlined ordering experience.", image: "assets/portfolio/ecommerce/storefront.png", slot: "06", link: "gadgetHub" },
+    { name: "HashiBot", category: "Signal & Automation Platform", description: "A standalone trading signal and automation platform built to turn market insights into clear, actionable workflows. We can build a similar automation platform around your business needs.", image: "assets/portfolio/trading/dashboard.png", slot: "07", link: "hashiBot" }
   ],
   caseStudies: [
-    { title: "Eastleigh Properties", challenge: "No modern way to showcase properties and capture leads.", solution: "Built a property marketplace with search, filters and WhatsApp leads.", result: "More qualified leads and smoother property inquiries.", image: "assets/portfolio/eastleigh/listing-flow.png", slot: "08" },
-    { title: "Beirut Delivery", challenge: "Manual orders slowed service and caused missed sales.", solution: "Built an online ordering system with WhatsApp checkout.", result: "Structured ordering flow and faster customer response.", image: "assets/portfolio/beirut-delivery/order-flow.png", slot: "09" },
-    { title: "Beirut Jiko", challenge: "Low visibility into sales, expenses and inventory.", solution: "Built an operations dashboard for full control.", result: "Better daily decisions and cleaner reporting.", image: "assets/portfolio/beirut-jiko/analytics.png", slot: "10" },
-    { title: "Social Media Growth", challenge: "Low visibility and inconsistent content output.", solution: "Built a repeatable content strategy and branding system.", result: "Improved consistency and stronger audience engagement.", image: "assets/portfolio/social-growth/campaign-results.png", slot: "11" }
+    { title: "Eastleigh Properties", challenge: "No modern way to showcase properties and capture leads.", solution: "Built a property marketplace with search, filters and WhatsApp leads.", result: "More qualified leads and smoother property inquiries." },
+    { title: "Beirut Delivery", challenge: "Manual orders slowed service and caused missed sales.", solution: "Built an online ordering system with WhatsApp checkout.", result: "Structured ordering flow and faster customer response." },
+    { title: "Beirut Jiko", challenge: "Low visibility into sales, expenses and inventory.", solution: "Built an operations dashboard for full control.", result: "Better daily decisions and cleaner reporting." },
+    { title: "Social Media Growth", challenge: "Low visibility and inconsistent content output.", solution: "Built a repeatable content strategy and branding system.", result: "Improved consistency and stronger audience engagement." }
   ],
   pricing: [
     { name: "Starter Website", price: "From KES 25,000", icon: "⌘", items: ["5 Page Website", "Mobile Responsive", "Basic SEO Setup", "Contact / WhatsApp"] },
