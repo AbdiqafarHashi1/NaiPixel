@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080b12" />
+  <title>NairobiPixel Revenue OS</title>
+  <link rel="stylesheet" href="admin.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../config.js"></script>
+</head>
+<body>
+  <div id="auth-screen" class="screen auth-screen">
+    <div class="auth-card">
+      <p class="eyebrow">NairobiPixel</p>
+      <h1>Revenue OS</h1>
+      <p>Private operating system for leads, customers, products, payments and experiments.</p>
+      <form id="login-form">
+        <label>Email<input id="email" type="email" required autocomplete="username" /></label>
+        <label>Password<input id="password" type="password" required autocomplete="current-password" /></label>
+        <button type="submit">Sign in</button>
+        <p id="auth-message" class="message"></p>
+      </form>
+    </div>
+  </div>
+
+  <div id="app-shell" class="app-shell hidden">
+    <aside class="sidebar">
+      <div class="brand"><strong>NP</strong><span>Revenue OS</span></div>
+      <nav>
+        <button data-view="overview" class="active">Overview</button>
+        <button data-view="products">Products</button>
+        <button data-view="leads">CRM</button>
+        <button data-view="experiments">Experiments</button>
+      </nav>
+      <button id="logout" class="logout">Sign out</button>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div><p class="eyebrow">Control room</p><h1 id="view-title">Overview</h1></div>
+        <div id="connection-status" class="status">Connecting…</div>
+      </header>
+
+      <section id="overview" class="view active">
+        <div class="metric-grid">
+          <article><span>Cash collected</span><strong id="metric-revenue">KES 0</strong></article>
+          <article><span>Active leads</span><strong id="metric-leads">0</strong></article>
+          <article><span>Customers</span><strong id="metric-customers">0</strong></article>
+          <article><span>Live products</span><strong id="metric-products">0</strong></article>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><div><p class="eyebrow">Principle</p><h2>Build what touches money</h2></div></div>
+          <p>The Revenue OS is judged by cash collected, qualified opportunities and profitable products — not feature count.</p>
+        </div>
+      </section>
+
+      <section id="products" class="view">
+        <div class="panel"><div class="panel-head"><div><p class="eyebrow">Catalogue</p><h2>Products & services</h2></div></div><div id="product-list" class="table-wrap"></div></div>
+      </section>
+
+      <section id="leads" class="view">
+        <div class="panel"><div class="panel-head"><div><p class="eyebrow">Pipeline</p><h2>CRM</h2></div></div><div id="lead-list" class="table-wrap"></div></div>
+      </section>
+
+      <section id="experiments" class="view">
+        <div class="panel"><div class="panel-head"><div><p class="eyebrow">Experiment clock</p><h2>Scale / Change / Kill</h2></div></div><div id="experiment-list" class="table-wrap"></div></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
